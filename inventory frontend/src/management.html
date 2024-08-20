@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <!-- Login Section -->
+    <div id="loginSection">
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="loginMessage"></div>
+    </div>
+
+    <!-- Management Sections (Initially Hidden) -->
+    <div id="managementSection" style="display: none;">
+        <h1>Management Dashboard</h1>
+        <button id="showProducts">Show Products</button>
+        <button id="showCustomers">Show Customers</button>
+        <button id="showCategories">Show Categories</button>
+        <button id="showOrders">Show Orders</button>
+
+        <!-- Products -->
+        <div id="productSection" style="display: none;">
+            <h2>Products</h2>
+            <button id="addProduct">Add Product</button>
+            <div id="productList"></div>
+        </div>
+
+        <!-- Customers -->
+        <div id="customerSection" style="display: none;">
+            <h2>Customers</h2>
+            <button id="addCustomer">Add Customer</button>
+            <div id="customerList"></div>
+        </div>
+
+        <!-- Categories -->
+        <div id="categorySection" style="display: none;">
+            <h2>Categories</h2>
+            <button id="addCategory">Add Category</button>
+            <div id="categoryList"></div>
+        </div>
+
+        <!-- Orders -->
+        <div id="orderSection" style="display: none;">
+            <h2>Orders</h2>
+            <button id="addOrder">Add Order</button>
+            <div id="orderList"></div>
+        </div>
+    </div>
+</body>
+</html>

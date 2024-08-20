@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Inventory Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Add Product</a></li>
+                <li><a href="#">Payment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="product-list">
+            <h2>Product List</h2>
+            <ul id="products">
+                <!-- Product items will be dynamically added here -->
+            </ul>
+        </section>
+
+        <section id="add-product">
+            <h2>Add Product</h2>
+            <form id="productForm">
+                <input type="text" id="productName" placeholder="Product Name" required>
+                <input type="number" id="productPrice" placeholder="Price" required>
+                <input type="submit" value="Add Product">
+            </form>
+        </section>
+
+        <section id="payment">
+            <h2>Payment</h2>
+            <form id="paymentForm">
+                <input type="text" id="cardNumber" placeholder="Card Number" required>
+                <input type="text" id="cardHolder" placeholder="Card Holder Name" required>
+                <input type="text" id="expiryDate" placeholder="Expiry Date (MM/YY)" required>
+                <input type="number" id="cvv" placeholder="CVV" required>
+                <input type="submit" value="Pay Now">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Inventory Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
